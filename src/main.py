@@ -3,7 +3,7 @@
 # DRIVER FILE
 
 from src.misc import exit_if, \
-                 ARG_USAGE
+                     ARG_USAGE
 
 from sys import argv
 
