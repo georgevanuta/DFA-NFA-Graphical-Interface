@@ -6,8 +6,9 @@ Visualize DFA's by imputing their code in a .dfa file and compiling it using thi
 <img src="https://user-images.githubusercontent.com/74255152/178478526-d4817b2f-5986-41d2-ab37-e21e28027c71.png" width="800" height="500">
 
 [DFA Graphic Visualization Tool](#dfa-graphic-visualization-tool) \
-    [DFA format](#dfa-format) \
-    [Restrictions](#restrictions)
+    - [DFA format](#dfa-format) \
+    - [Restrictions](#restrictions) \
+    - [Notes](#notes)
 
 ## DFA format
 
@@ -36,3 +37,12 @@ even
 The name of the states to be at most 6 characters. \
 Each member of the alphabet to be at most 3 characters (Mostly applies when having 7+ states)  \
 The number of states to be at most 14.
+
+## Notes
+
+You can play around with different DFA's locatated in the **tests** folder and see how they are going tl be rendered.
+
+## What's in plan?
+
+- an animation showing the different states the DFA goes through processing a string. \
+- increase the limit of states by making the window slidable.
