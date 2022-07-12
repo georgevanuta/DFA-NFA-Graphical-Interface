@@ -15,11 +15,11 @@ Visualize DFA's by imputing their code in a .dfa file and compiling it using thi
 
 ## DFA format
 
-First line: "--" Followed by a short description of your DFA. \
-Second line: The start state. \
-Following lines: The DFA instructions, being of the format: \
+*First line:* "--" Followed by a short description of your DFA. \
+*Second line:* The start state. \
+*Following lines:* The DFA instructions, being of the format: \
 <CURRENT_STATE> \<CHARACTER\> <NEXT_STATE> \
-Last line: The accepts states, separated by spaces.
+*Last line:* The accepts states, separated by spaces.
 
 _Example of dfa code_:
 
