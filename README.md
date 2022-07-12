@@ -37,8 +37,8 @@ even
 
 ## Restrictions
 
-- The name of the states to be at most 6 characters. \
-- Each member of the alphabet to be at most 3 characters (Mostly applies when having 7+ states)  \
+- The name of the states to be at most 6 characters.
+- Each member of the alphabet to be at most 3 characters (Mostly applies when having 7+ states) 
 - The number of states to be at most 14.
 
 ## Notes
