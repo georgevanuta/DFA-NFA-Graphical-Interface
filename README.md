@@ -8,7 +8,7 @@ Visualize DFA's by imputing their code in a .dfa file and compiling it using thi
   - [DFA format](#dfa-format)
   - [Restrictions](#restrictions)
   - [Notes](#notes)
-  - [What's in plan?](#what's in plan?)
+  - [What's in plan?](#whats-in-plan)
 
 ## Example
 <img src="https://user-images.githubusercontent.com/74255152/178478526-d4817b2f-5986-41d2-ab37-e21e28027c71.png" width="870" height="500">
