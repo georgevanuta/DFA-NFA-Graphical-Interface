@@ -43,7 +43,7 @@ The number of states to be at most 14.
 
 ## Notes
 
-You can play around with different DFA's locatated in the **tests** folder and see how they are going tl be rendered.
+You can play around with different DFA's locatated in the **tests** folder and see how they are going to be rendered.
 
 ## What's in plan?
 
