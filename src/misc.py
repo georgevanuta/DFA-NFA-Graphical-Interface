@@ -36,7 +36,6 @@ SELF_ARROW_ADJUST_X = 12
 SELF_ARROW_ADJUST_Y = 10
 SELF_ARROW_ADJUST_X_RIGHT = 5
 SELF_ARROW_ADJUST_Y_RIGHT = 5
-
 SELF_CHARACTER_ADJUST = 3
 
 
@@ -62,8 +61,15 @@ def TODO(title):
     print(f"[TODO]: {title}")
 
 
+# Flags
+FLAGS = ['-d', '--dark']
+
+# Modes
+DARK_MODE = 'dark mode'
+LIGHT_MODE = 'light mode'
+
 # Usage
-ARG_USAGE = "[USAGE]: dfa path/to/dfa/file."
+ARG_USAGE = "[USAGE]: dfa path/to/dfa/file <FLAGS>."
 
 # Error
 MAX_STATES = 14
@@ -73,3 +79,4 @@ INVALID_DESCRIPTION = "[ERROR]: your .dfa file needs to contain a description as
  that starts with \"--\""
 STATES_EXCEEDED = f"[ERROR]: Can't load more than {MAX_STATES} states."
 NEGATIVE_DISCRIMINANT = "[ERROR]: Negative discriminant."
+def INVALID_FLAG(flag): return f"[ERROR]: Invalid flag: {flag}."
