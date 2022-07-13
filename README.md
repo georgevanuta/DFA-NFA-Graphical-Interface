@@ -48,6 +48,6 @@ You can play around with different DFA's locatated in the **tests** folder and s
 ## What's in plan?
 
  - [ ] an animation showing the different states the DFA goes through processing a string. 
- - [ ] add dark mode.
+ - [x] add dark mode.
  - [ ] increase the limit of states by making the window slidable.
 
