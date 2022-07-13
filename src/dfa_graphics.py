@@ -10,7 +10,9 @@ from src.misc import START_X, START_Y, MAX_X, \
                  STATE_LOWER_MULTIPLIER, \
                  ROW_ADJUST, ROW_TEXT_ADJUST, \
                  STATE_DIFFERENT_LENGTH, \
-                 exit_if, INVALID_DFA, MAX_STATES, STATES_EXCEEDED
+                 LIGHT_MODE, DARK_MODE, \
+                 INVALID_DFA, MAX_STATES, STATES_EXCEEDED, \
+                 exit_if
 
 from dfa import DFA, is_dfa_invalid
 
@@ -26,9 +28,14 @@ from PyQt6.QtCore import Qt
 
 
 class GraphicInterface(QWidget):
-    def __init__(self, path):
+    def __init__(self, path, dark):
         super().__init__()
         self.state_pos = None
+
+        if dark:
+            self.theme = DARK_MODE
+        else:
+            self.theme = LIGHT_MODE
 
         with open(path, 'r') as f:
             self.dfa = DFA(f.read())
@@ -37,6 +44,10 @@ class GraphicInterface(QWidget):
             self.initUI()
 
     def initUI(self):
+        if self.theme == DARK_MODE:
+            self.setStyleSheet("background-color: black;")
+        else:
+            self.setStyleSheet("background-color: white;")
         self.setMinimumSize(100, 100)
         self.setGeometry(500, 100, 600, 600)
         self.setWindowTitle(f'Deterministic Finite Automata: {self.dfa.description}')
@@ -49,7 +60,11 @@ class GraphicInterface(QWidget):
         qp.end()
 
     def draw_states(self, qp):
-        qp.setPen(Qt.GlobalColor.black)
+        if self.theme == DARK_MODE:
+            qp.setPen(Qt.GlobalColor.white)
+        else:
+            qp.setPen(Qt.GlobalColor.black)
+
         qp.setFont(QFont('Arial', 10))
 
         x = START_X
