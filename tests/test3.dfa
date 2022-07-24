@@ -1,9 +1,0 @@
---Binary Odd Numbers.
-init
-init 0 even
-init 1 odd
-even 0 even
-even 1 odd
-odd 1 odd
-odd 0 even
-odd

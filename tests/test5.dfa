@@ -1,8 +1,0 @@
---Binary Numbers where every 1 has a 0 after it.
-zero
-zero 1 search
-zero 0 zero
-search 0 zero
-search 1 fail
-fail 0,1 fail
-zero
