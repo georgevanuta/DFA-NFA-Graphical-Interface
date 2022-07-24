@@ -1,0 +1,9 @@
+-- First Test Ever for NFA
+
+a
+
+a \eps a
+
+a \eps b
+
+a

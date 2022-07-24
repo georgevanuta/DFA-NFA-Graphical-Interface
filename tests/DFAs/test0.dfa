@@ -1,0 +1,7 @@
+--Binary Numbers with an even number of 1s.
+even
+even 0 even
+even 1 odd
+odd 0 odd
+odd 1 even
+odd
