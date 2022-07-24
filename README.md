@@ -1,9 +1,9 @@
-# DFA Graphic Visualization Tool
+# DFA / NFA Graphic Visualization Tool
 
-Visualize DFA's by imputing their code in a .dfa file and compiling it using this program.
+Visualize FA's by imputing their code in a .dfa / .nfa file and compiling it using this program.
 
 
-[DFA Graphic Visualization Tool](#dfa-graphic-visualization-tool)
+[DFA / NFA Graphic Visualization Tool](#dfa-/-nfa-graphic-visualization-tool)
   - [Example](#example)
   - [DFA format](#dfa-format)
   - [Restrictions](#restrictions)
@@ -13,7 +13,7 @@ Visualize DFA's by imputing their code in a .dfa file and compiling it using thi
 ## Example
 <img src="https://user-images.githubusercontent.com/74255152/178478526-d4817b2f-5986-41d2-ab37-e21e28027c71.png">
 
-## DFA format
+## FA format
 
 *First line:* "--" Followed by a short description of your DFA. \
 *Second line:* The start state. \
@@ -43,11 +43,12 @@ even
 
 ## Notes
 
-You can play around with different DFA's locatated in the **tests** folder and see how they are going to be rendered.
+You can play around with different FA's locatated in the **tests** folder and see how they are going to be rendered.
 
 ## What's in plan?
 
  - [ ] an animation showing the different states the DFA goes through processing a string. 
  - [x] add dark mode.
  - [ ] increase the limit of states by making the window slidable.
+ - [x] add support for NFA's.
 
