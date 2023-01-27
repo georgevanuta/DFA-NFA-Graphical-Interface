@@ -1,4 +1,4 @@
-# DFA / NFA Graphic Visualization Tool
+# DFA / NFA Graphical Visualization Tool
 
 Visualize FA's by imputing their code in a .dfa / .nfa file and compiling it using this program.
 
